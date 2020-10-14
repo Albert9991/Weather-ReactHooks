@@ -1,0 +1,79 @@
+.cityName,.cityCode,.localDate,.localTime{
+  margin-top: 7px;
+}
+.descrip > h5 {
+  font-size: 25px;
+  margin: -3px 0 3px 0;
+}
+.descrip,.temp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus{
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+.active {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+#wrapper {
+  height: 350px;
+  background-color: #60b2e2;
+  box-shadow: 1px 5px 25px 3px #444;
+  border-radius: 10px;
+  margin: 50px auto;
+  max-width: 720px;
+  padding: 0px;
+  color: white;  
+}
+#current_weather{
+  padding: 15px;
+}
+#mainTemperature{
+  font-size: 70px; 
+  line-height: 0.7;
+}
+#tempDescription {
+  margin-top: 7px;
+  display: inline;
+}
+.humWid{
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-around;
+}
+.day_weather_box {
+  border: 1px solid #28688C;
+  background-color: #2E7FA1;
+  border-radius: 5px;
+  height: 5em;
+}
+.day_weather_box p{
+  margin-bottom: 0;
+}
+.side_weather_info {
+  padding: 0px 10px;
+  font-size: 30px;
+}
+.day_weather_inner_box {
+  display: inline-flex;
+  margin: 14px auto;
+  padding: 0px 5px;
+}
+.forecast_main {
+  padding: 0px 0px 0px 30px;
+}
+.forecast_icon {
+  font-size: 25px;
+  margin-left: 5px;
+}
