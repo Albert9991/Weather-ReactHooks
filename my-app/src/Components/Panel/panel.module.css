@@ -1,3 +1,8 @@
+.head{
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
 .cityName,.cityCode,.localDate,.localTime{
   margin-top: 7px;
 }

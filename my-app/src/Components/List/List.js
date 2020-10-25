@@ -16,13 +16,17 @@ const List = () => {
     return (
         <div>
             <Header
-                countryName={setcountryName} />
-            <Panel
+                setcountryName={setcountryName} />
+
+            {data && <Panel
                 data={data}
-            />
-            <Cards 
-            data = {data}
-            />
+            />}
+                
+            
+            {data &&<Cards 
+            data = {data.list}
+            />}
+            
         </div>
     )
 }

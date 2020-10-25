@@ -10,7 +10,8 @@ const Header = ({setcountryName}) => {
                 className="Header-logo"
             />
             <input className = 'search' placeholder = "Search City" onKeyUp = {e =>{
-                if(e.key = 'Enter'){
+                if(e.key === 'Enter'){
+                    console.log(document.querySelector('.search').value)
                     setcountryName(document.querySelector('.search').value)
                 }
             }}/>
