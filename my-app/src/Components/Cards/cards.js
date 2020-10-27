@@ -1,7 +1,7 @@
 import React from 'react';
 import CardModule from './cards.module.css'
 
-const Cards = ({data}) =>{
+const Cards = ({data,setModal,setDay,modal}) =>{
     let date = ''
     return(
         <div className={CardModule.wrapper}>
@@ -14,7 +14,15 @@ const Cards = ({data}) =>{
                         date = cutDate
                         return(
                             
-                                <div className={CardModule.card}>
+                                <div className={CardModule.card} onClick={() =>{
+                                    if(!modal){
+                                        setModal(!modal)
+                                        setDay(cutDate)
+                                    }else{
+                                        setModal(!modal)
+                                        setDay(null)
+                                    }
+                                }}>
                                     <div className={CardModule.box}>
                                         <div className={`${CardModule.wave} ${CardModule._one}`}></div>
                                         <div className={`${CardModule.wave} ${CardModule._two}`}></div>
